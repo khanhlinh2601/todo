@@ -25,10 +25,10 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         {text}
       </li>
       <button onClick={completeHandler} className="complete-btn ">
-        <FontAwesomeIcon icon={faCheck}/>
+        <FontAwesomeIcon icon={faCheck} className="text-blue-400 hover:text-blue-700"/>
       </button>
       <button onClick={deleteHandler}>
-        <FontAwesomeIcon icon={faTrash} />
+        <FontAwesomeIcon icon={faTrash} className="text-red-400 hover:text-red-700"/>
       </button>
     </div>
   );
